@@ -55,7 +55,7 @@ Windows won't set any volume above 100%. To boost, the audio itself has to be am
 - One engine gain serves every app. Each app's own level comes from its Windows volume: the engine uses the highest boost, and quieter apps are scaled down within Windows (the "ratio trick").
 - Every change is written to a journal first, so VolumeX can always put Windows back the way it was.
 
-The full design is in [design/PRODUCT_AND_ARCHITECTURE.md](design/PRODUCT_AND_ARCHITECTURE.md). For how to use every screen, see the [user manual](https://sihabsahariar.com/VolumeX/manual.html) (also available as a [PDF](docs/VolumeX-User-Manual.pdf)).
+For how to use every screen, see the [user manual](https://sihabsahariar.com/VolumeX/manual.html) (also available as a [PDF](docs/VolumeX-User-Manual.pdf)).
 
 ## Install
 
@@ -101,27 +101,6 @@ powershell -ExecutionPolicy Bypass -File packaging\build.ps1
 
 The app icon, logo and tray icons come from the VolumeX brand kit (`assets/VolumeX logo kit.zip`, installed in `volumex/resources/brand`). `build.ps1` fetches VB-CABLE and produces `dist\VolumeX\`, containing `VolumeX.exe`, `VolumeXEngine.exe` and `vbcable\`, plus the portable `dist\installer\VolumeX-win64.zip`. If [Inno Setup 6](https://jrsoftware.org/isinfo.php) is installed, it also produces `dist\installer\VolumeX-Setup.exe`.
 
-## Website and manual
-
-The product website is plain HTML in `docs/`, published with GitHub Pages like Umbra's.
-
-1. Push this repository to `github.com/SihabSahariar/VolumeX`.
-2. Go to **Settings → Pages**, choose **Deploy from a branch**, then **main** and **/docs**.
-
-The site then appears at `sihabsahariar.github.io/VolumeX`, which redirects to `sihabsahariar.com/VolumeX/`. It has two pages:
-
-- **`index.html`:** the landing page, with an in-browser boost demo built on Web Audio.
-- **`manual.html`:** the user manual.
-
-After changing the UI:
-
-1. Run `scripts/screenshot.py` to refresh the screenshots.
-2. Print `manual.html?pdf` to `docs/VolumeX-User-Manual.pdf`. Its print styles produce the A4 layout. Headless Edge works:
-   ```powershell
-   msedge --headless --no-pdf-header-footer --print-to-pdf=docs\VolumeX-User-Manual.pdf "file:///<repo>/docs/manual.html?pdf"
-   ```
-
-Releases must include `VolumeX-Setup.exe` and `VolumeX-win64.zip`, both produced by `build.ps1`. The site links to `releases/latest/download/<name>`.
 
 ## Project layout
 
