@@ -6,7 +6,7 @@
 </p>
 
 <p align="center"><b>Make any app louder than 100% - or turn it down - each one on its own.</b><br>
-A free, open-source volume booster for Windows 10 and 11 · made by <a href="https://sihabsahariar.com/">Sihab Sahariar</a></p>
+A free, open-source volume booster for Windows 10 and 11 · </p>
 
 <p align="center"><a href="https://sihabsahariar.com/VolumeX/"><b>Website</b></a> · <a href="https://sihabsahariar.com/VolumeX/manual.html"><b>User manual</b></a> · <a href="https://github.com/SihabSahariar/VolumeX/releases/latest/download/VolumeX-Setup.exe"><b>Download for Windows</b></a></p>
 
