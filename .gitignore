@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.hypothesis/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+screenshots/
+third_party/
+dist-*/

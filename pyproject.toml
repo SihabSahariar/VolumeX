@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "volumex"
+version = "0.1.0"
+description = "Per-app and system-wide volume booster for Windows"
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" }
+requires-python = ">=3.10"
+dependencies = [
+    "PyQt5>=5.15",
+    "pycaw>=20240210",
+    "comtypes>=1.4",
+    "numpy>=1.26",
+    "sounddevice>=0.4.6",
+    "samplerate>=0.2",
+    "psutil>=5.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-qt", "hypothesis", "pyinstaller"]
+
+[project.gui-scripts]
+volumex = "volumex.app:main"
+
+[tool.setuptools.packages.find]
+include = ["volumex*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+qt_api = "pyqt5"

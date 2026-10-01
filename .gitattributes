@@ -1,0 +1,7 @@
+# Normalise text files to LF in the repository; keep binaries untouched.
+* text=auto
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary
+*.zip binary

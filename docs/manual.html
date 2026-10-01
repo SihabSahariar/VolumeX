@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VolumeX manual</title>
+  <meta name="description" content="How to use VolumeX: install, unlock boost with VB-CABLE, boost apps past 100%, hotkeys, automations, settings and troubleshooting.">
+  <meta name="theme-color" content="#100C0A">
+  <meta property="og:title" content="VolumeX manual">
+  <meta property="og:description" content="Everything about VolumeX, from installing to fine-tuning.">
+  <meta property="og:image" content="https://sihabsahariar.com/VolumeX/assets/img/og-image.png">
+  <meta property="og:url" content="https://sihabsahariar.com/VolumeX/manual.html">
+  <link rel="canonical" href="https://sihabsahariar.com/VolumeX/manual.html">
+  <link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/brand/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/brand/app-icon-256.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav" data-solid>
+  <div class="wrap nav-inner">
+    <a class="brand" href="./" aria-label="VolumeX home"><img src="assets/brand/logo-reversed.svg" alt="VolumeX" width="158" height="30"></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="./#how">How it works</a>
+      <a href="./#features">Features</a>
+      <a href="./#tour">Tour</a>
+      <a href="./#safety">Safety</a>
+      <a href="manual.html" aria-current="page">Manual</a>
+    </nav>
+    <a class="btn btn-light btn-sm nav-cta" href="https://github.com/SihabSahariar/VolumeX/releases/latest/download/VolumeX-Setup.exe">Download</a>
+  </div>
+</header>
+
+<main>
+  <div class="doc-hero">
+    <div class="wrap">
+      <img class="print-logo" src="assets/brand/logo.svg" alt="VolumeX">
+      <p class="kicker">Manual</p>
+      <h1>How to use VolumeX</h1>
+      <p>Everything from installing to fine-tuning. Most people only need the first three sections.</p>
+      <div class="cta no-print">
+        <a class="btn btn-accent btn-sm" href="VolumeX-User-Manual.pdf" download>Download the PDF</a>
+        <a class="btn btn-ghost btn-sm" href="https://github.com/SihabSahariar/VolumeX/releases/latest/download/VolumeX-Setup.exe">Download VolumeX</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap doc">
+    <nav class="toc" aria-label="Contents">
+      <a href="#install">Install</a>
+      <a href="#unlock">Unlock boost</a>
+      <a href="#mixer">The mixer</a>
+      <a href="#tray">Tray &amp; hotkeys</a>
+      <a href="#devices">Devices</a>
+      <a href="#automations">Automations</a>
+      <a href="#settings">Settings</a>
+      <a href="#troubleshooting">Troubleshooting</a>
+      <a href="#privacy">Privacy &amp; safety</a>
+      <a href="#uninstall">Uninstall</a>
+    </nav>
+
+    <article class="prose">
+      <!-- ====================================================== 01 -->
+      <section id="install">
+        <h2><span class="num">01</span>Install</h2>
+        <ol>
+          <li>Download <a href="https://github.com/SihabSahariar/VolumeX/releases/latest/download/VolumeX-Setup.exe"><code>VolumeX-Setup.exe</code></a>.</li>
+          <li>Run it. If Windows SmartScreen says it "protected your PC", choose <em>More info → Run anyway</em>. The installer isn't code-signed yet.</li>
+          <li>Follow the wizard. Keep <em>Install VB-CABLE by VB-Audio</em> ticked: it's what lets VolumeX go above 100%. You can also start VolumeX when you sign in and add a desktop shortcut.</li>
+          <li>If you kept VB-CABLE ticked, Windows asks for permission once while it's installed, and setup offers to restart your PC at the end. Say yes: VB-CABLE switches on after a restart.</li>
+          <li>VolumeX appears in the system tray. Click the <kbd>^</kbd> arrow near the clock if you don't see it.</li>
+        </ol>
+        <div class="callout"><strong>Needs:</strong> Windows 10 or 11 (64-bit). VolumeX installs just for you, so it doesn't need administrator rights. Only VB-CABLE, a driver, asks for permission. Prefer no installer? Get the <a href="https://github.com/SihabSahariar/VolumeX/releases/latest/download/VolumeX-win64.zip">portable zip</a>, extract it anywhere and run <code>VolumeX.exe</code>. It can install VB-CABLE for you from its setup screen.</div>
+      </section>
+
+      <!-- ====================================================== 02 -->
+      <section id="unlock">
+        <h2><span class="num">02</span>Unlock boost</h2>
+        <p>Windows won't set any volume above 100%. To go further, the sound itself has to be amplified. VolumeX does that with the help of <strong>VB-CABLE</strong>, a free virtual audio device made by VB-Audio. Only the apps you boost play through it. Everything else goes straight to your speakers, exactly as before.</p>
+        <p>The setup screen opens the first time you start VolumeX. The first page lets you try a boost slider. The second page installs VB-CABLE:</p>
+        <figure class="mid"><img src="assets/img/setup-unlock.png" width="1110" height="930" alt="The Unlock boost step with the Install VB-CABLE button" loading="lazy"><figcaption>Unlock boost: one click installs VB-CABLE.</figcaption></figure>
+        <ol>
+          <li>Click <strong>Install VB-CABLE</strong>. VolumeX checks that the package is genuinely signed by VB-Audio before running it.</li>
+          <li>Approve the Windows permission prompt. The install takes about 20 seconds.</li>
+          <li>When it says <em>Restart needed</em>, restart your PC, or click <strong>Restart now</strong>. VolumeX finds VB-CABLE by itself afterwards and the card turns green.</li>
+        </ol>
+        <figure class="mid"><img src="assets/img/setup-restart.png" width="1110" height="930" alt="VB-CABLE installed, restart needed" loading="lazy"><figcaption>Installed: a restart switches it on.</figcaption></figure>
+        <p>Skipped it? VolumeX works as a smart mixer up to 100% until you're ready. The Mixer shows an <strong>Unlock boost</strong> banner that brings you back to this step, and so does <em>Settings → Troubleshooting → Run setup</em>.</p>
+        <figure><img src="assets/img/mixer-setup-needed.png" width="1770" height="1140" alt="Mixer with the Unlock boost banner and hatched boost zones" loading="lazy"><figcaption>Without VB-CABLE the boost zone past 100% is hatched, and the banner offers the one-click install.</figcaption></figure>
+        <div class="callout warn"><strong>No sound after installing VB-CABLE?</strong> Windows sometimes makes <em>CABLE Input</em> your default output, so everything plays into the cable and you hear nothing. VolumeX notices and shows <strong>All sound is going into VB-CABLE</strong>: click <strong>Fix it</strong> to switch Windows back to your speakers or headphones.</div>
+        <figure><img src="assets/img/mixer-fix-default.png" width="1770" height="1140" alt="The Fix it banner in the mixer" loading="lazy"></figure>
+        <p>If the automatic install fails, the card offers <strong>Open VB-CABLE setup</strong>, VB-Audio's own installer. Click <em>Install Driver</em> there, then restart.</p>
+        <div class="callout"><strong>About VB-CABLE:</strong> VB-CABLE is donationware by VB-Audio. VolumeX ships their official, unmodified package, which <a href="https://vb-audio.com/Services/licensing.htm">VB-Audio's licence</a> allows. If it's useful to you, please <a href="https://shop.vb-audio.com/en/win-apps/11-vb-cable.html">support VB-Audio</a>.</div>
+      </section>
+
+      <!-- ====================================================== 03 -->
+      <section id="mixer">
+        <h2><span class="num">03</span>The mixer</h2>
+        <p>The Mixer is VolumeX's main screen: the master dial on the left, and every app that's making sound on the right.</p>
+        <figure><img src="assets/img/mixer.png" width="1770" height="1140" alt="The VolumeX mixer" loading="lazy"><figcaption>Chrome boosted to 220%, Discord to 135%, Spotify turned down to 45%.</figcaption></figure>
+
+        <h3>The master dial</h3>
+        <ul>
+          <li><strong>0 to 100%</strong> is your normal Windows volume, the same one the taskbar and your keyboard's volume keys change.</li>
+          <li><strong>Above 100%</strong> boosts every app at once. The number turns warm and a <em>BOOST</em> label shows how many decibels you've added.</li>
+          <li>Drag around the dial, scroll over it, or use the quick presets underneath: <strong>100%</strong>, <strong>150%</strong>, <strong>200%</strong> and the maximum.</li>
+          <li><em>Output</em> shows what's playing. When the Distortion Guard is working, it says <em>GUARD ACTIVE</em> and how much it's holding back.</li>
+        </ul>
+        <figure><img src="assets/img/mixer-master-boost.png" width="1770" height="1140" alt="The master dial boosted to 150%" loading="lazy"><figcaption>Master at 150%: every app is 1.5 times louder.</figcaption></figure>
+
+        <h3>App rows</h3>
+        <p>Each app has its icon, its name and status, a slider, the current level, a <strong>mute</strong> button and a <strong>remember</strong> (bookmark) button. Apps show up as soon as they make a sound. Browsers with many processes appear as one app.</p>
+        <p>The slider's notch marks 100%. Left of it is normal volume, drawn in cool colours. Right of it is the boost zone, drawn in warm colours. The bright part inside the slider is a live meter of what the app is playing.</p>
+        <table>
+          <thead><tr><th>Do this</th><th>To</th></tr></thead>
+          <tbody>
+            <tr><td>Drag</td><td>Set any level. The slider snaps to 100% as you pass it.</td></tr>
+            <tr><td>Scroll wheel</td><td>Change by 2%. Hold <kbd>Ctrl</kbd> for 10%.</td></tr>
+            <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>Change by 1% (click the slider first).</td></tr>
+            <tr><td><kbd>PgUp</kbd> <kbd>PgDn</kbd></td><td>Change by 10%.</td></tr>
+            <tr><td><kbd>Home</kbd> <kbd>End</kbd></td><td>Jump to 0% or to the maximum.</td></tr>
+            <tr><td>Double-click</td><td>Back to 100%.</td></tr>
+          </tbody>
+        </table>
+
+        <h3>What the status means</h3>
+        <table>
+          <thead><tr><th>Status</th><th>Meaning</th></tr></thead>
+          <tbody>
+            <tr><td>Playing / Idle</td><td>The app is or isn't making sound right now.</td></tr>
+            <tr><td>BOOSTED</td><td>The app is above 100% and playing through the boost engine.</td></tr>
+            <tr><td>Ready to boost</td><td>It's set above 100% and will be boosted as soon as it plays.</td></tr>
+            <tr><td>Restart app to boost</td><td>The app didn't switch to the boost path while it was running. Close and reopen it once. Until then it plays at up to 100%.</td></tr>
+            <tr><td>Setup needed</td><td>VB-CABLE isn't installed yet. See <a href="#unlock">Unlock boost</a>.</td></tr>
+            <tr><td>Boost paused</td><td>You've turned <em>Boost</em> off, so everything plays at up to 100%.</td></tr>
+            <tr><td>Muted</td><td>You muted the app with its speaker button.</td></tr>
+          </tbody>
+        </table>
+        <figure><img src="assets/img/mixer-states.png" width="1770" height="1140" alt="App rows showing Boosted, Restart app to boost and Muted" loading="lazy"><figcaption>Chrome boosted, Spotify waiting for a restart, Discord muted.</figcaption></figure>
+
+        <h3>Boost and the Distortion Guard</h3>
+        <ul>
+          <li><strong>Boost</strong> turns all boosting on or off. Off puts every app back at 100% or below, straight away, without forgetting your settings.</li>
+          <li><strong>Distortion Guard</strong> is a look-ahead limiter. It catches peaks a few milliseconds before they would clip, so boosted audio stays clean. Leave it on.</li>
+        </ul>
+        <figure class="narrow"><img src="assets/img/safety-notice.png" width="690" height="455" alt="The hearing safety note" loading="lazy"><figcaption>The first time you boost, VolumeX reminds you to go easy on your ears.</figcaption></figure>
+      </section>
+
+      <!-- ====================================================== 04 -->
+      <section id="tray">
+        <h2><span class="num">04</span>Tray &amp; hotkeys</h2>
+        <p>VolumeX lives in the system tray. Closing its window keeps it running there, so your levels keep working.</p>
+        <div class="trays" aria-label="Tray icon states">
+          <div class="dark"><img src="assets/img/tray-normal-dark.png" alt="">Normal</div>
+          <div class="dark"><img src="assets/img/tray-boost-dark.png" alt="">Boosting</div>
+          <div class="dark"><img src="assets/img/tray-muted-dark.png" alt="">Muted</div>
+          <div class="lite"><img src="assets/img/tray-normal-light.png" alt="">Normal</div>
+          <div class="lite"><img src="assets/img/tray-boost-light.png" alt="">Boosting</div>
+          <div class="lite"><img src="assets/img/tray-muted-light.png" alt="">Muted</div>
+        </div>
+        <table>
+          <thead><tr><th>Icon</th><th>Meaning</th></tr></thead>
+          <tbody>
+            <tr><td>White or dark glyph</td><td>Normal. The glyph matches your taskbar's light or dark theme.</td></tr>
+            <tr><td>Orange glyph</td><td>Something is being boosted right now.</td></tr>
+            <tr><td>Faded glyph</td><td>Your output device is muted.</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li><strong>Click</strong> the icon for the quick mixer: the master slider, the apps that are playing, and Boost and Guard switches.</li>
+          <li><strong>Double-click</strong> to open the main window.</li>
+          <li><strong>Right-click</strong> for <em>Open VolumeX</em>, <em>Pause boost</em>, <em>Reset audio</em>, <em>Settings</em> and <em>Quit VolumeX</em>.</li>
+        </ul>
+        <figure class="narrow"><img src="assets/img/flyout.png" width="588" height="870" alt="The tray flyout" loading="lazy"><figcaption>The quick mixer that opens from the tray.</figcaption></figure>
+
+        <h3>Hotkeys</h3>
+        <p>These work from any app:</p>
+        <table>
+          <thead><tr><th>Keys</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>↑</kbd></td><td>Boost the app you're using by 10%.</td></tr>
+            <tr><td><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>↓</kbd></td><td>Turn the app you're using down by 10%.</td></tr>
+            <tr><td><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>0</kbd></td><td>Reset the app you're using to 100%.</td></tr>
+            <tr><td><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>PgUp</kbd></td><td>Master up by 10%.</td></tr>
+            <tr><td><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>PgDn</kbd></td><td>Master down by 10%.</td></tr>
+            <tr><td><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>B</kbd></td><td>Pause or resume all boost.</td></tr>
+          </tbody>
+        </table>
+        <p>A small overlay near the bottom of the screen shows the new level. You can turn it off in Settings.</p>
+        <figure class="mid"><img src="assets/img/osd.png" width="570" height="144" alt="The on-screen volume overlay" loading="lazy"></figure>
+        <p>To change a shortcut, go to <em>Settings → Hotkeys</em>, click it and press the new combination. It needs <kbd>Ctrl</kbd>, <kbd>Alt</kbd> or <kbd>Win</kbd>. <kbd>Backspace</kbd> clears it and <kbd>Esc</kbd> cancels. A shortcut shown in amber is already taken by another program.</p>
+      </section>
+
+      <!-- ====================================================== 05 -->
+      <section id="devices">
+        <h2><span class="num">05</span>Devices</h2>
+        <figure><img src="assets/img/devices.png" width="1770" height="1140" alt="The Devices page" loading="lazy"></figure>
+        <ul>
+          <li><strong>Output devices:</strong> VolumeX follows whichever device Windows is using. It remembers the master boost for each one, so your headphones can sit at 180% while your speakers stay at 100%. Switch devices in Windows and VolumeX applies the right boost.</li>
+          <li><strong>VB-CABLE by VB-Audio:</strong> whether it's installed, with an <em>Install</em> button if not, and a link to support VB-Audio if it is.</li>
+          <li><strong>Engine:</strong> <em>Ready</em> means it's waiting and starts by itself when you boost something. <em>Boosting</em> means it's working.</li>
+          <li><strong>Added delay for boosted apps:</strong> usually 20-45 ms. Apps you don't boost get no delay at all.</li>
+          <li><strong>Boosted audio plays on:</strong> normally <em>Follow Windows default</em>. Pick a device to always send boosted audio there.</li>
+        </ul>
+      </section>
+
+      <!-- ====================================================== 06 -->
+      <section id="automations">
+        <h2><span class="num">06</span>Automations</h2>
+        <figure><img src="assets/img/automations.png" width="1770" height="1140" alt="The Automations page" loading="lazy"></figure>
+        <h3>Remembered apps</h3>
+        <p>Windows often forgets per-app volumes. VolumeX remembers any app you adjust and puts its level back every time it starts. The bookmark button on each app row turns this on or off. <strong>Forget</strong> removes an app here.</p>
+        <h3>Rules</h3>
+        <p>A rule changes one app's volume when another app starts. For example: <em>when Zoom starts, set Spotify to 30%</em>.</p>
+        <ol>
+          <li>Click <strong>Add rule</strong>.</li>
+          <li>Choose the app that triggers it, the app to change, and the level.</li>
+          <li>Click <strong>Add rule</strong>. Use its switch to pause it, or the bin to delete it.</li>
+        </ol>
+        <figure class="mid"><img src="assets/img/rule-dialog.png" width="840" height="632" alt="The New rule dialog" loading="lazy"></figure>
+      </section>
+
+      <!-- ====================================================== 07 -->
+      <section id="settings">
+        <h2><span class="num">07</span>Settings</h2>
+        <table>
+          <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Start with Windows</td><td>Starts VolumeX quietly in the tray when you sign in, so your levels are always applied.</td></tr>
+            <tr><td>Start minimized</td><td>Opens to the tray instead of the window.</td></tr>
+            <tr><td>Keep running when closed</td><td>Closing the window keeps VolumeX in the tray. Quit from the tray menu.</td></tr>
+            <tr><td>On-screen volume display</td><td>Shows the overlay when you use hotkeys.</td></tr>
+            <tr><td>Maximum boost</td><td>The highest level any slider can reach: 200%, 300% (default), 400% or 500%.</td></tr>
+            <tr><td>Distortion Guard</td><td>The look-ahead limiter. Keep it on unless you know why not.</td></tr>
+            <tr><td>Appearance</td><td>Seven colour themes. Boosted levels always show in warm colours.</td></tr>
+            <tr><td>Hotkeys</td><td>Change or clear any shortcut. See <a href="#tray">Tray &amp; hotkeys</a>.</td></tr>
+            <tr><td>User manual</td><td>Opens this manual.</td></tr>
+            <tr><td>Reset audio</td><td>Every app back to 100% and boost off, in one click. Use it if anything sounds wrong.</td></tr>
+            <tr><td>Boost setup</td><td>Opens the VB-CABLE setup again.</td></tr>
+            <tr><td>Log files</td><td>Opens the log folder, which is useful when reporting a problem.</td></tr>
+          </tbody>
+        </table>
+        <figure><img src="assets/img/settings.png" width="1770" height="1140" alt="The Settings page" loading="lazy"></figure>
+        <p>The <strong>About</strong> page shows the version, links to this manual, the website and the source code, a way to send feedback, and the credits, including a link to support VB-Audio.</p>
+      </section>
+
+      <!-- ====================================================== 08 -->
+      <section id="troubleshooting">
+        <h2><span class="num">08</span>Troubleshooting</h2>
+        <details>
+          <summary>I hear nothing after installing VB-CABLE</summary>
+          <p>Windows has probably made <em>CABLE Input</em> your default output. Click <strong>Fix it</strong> on the banner in the Mixer. You can also go to Windows Settings → System → Sound → Output and choose your speakers or headphones.</p>
+        </details>
+        <details>
+          <summary>An app says "Restart app to boost"</summary>
+          <p>Some apps, Spotify for example, only pick up a new audio path when they start. Close the app and open it again, and it's boosted from then on. If the app has its own output-device setting, set it to <em>Default</em>.</p>
+        </details>
+        <details>
+          <summary>A game or music program can't be boosted</summary>
+          <p>Apps that use <em>exclusive mode</em> audio, some games and pro audio tools, bypass the Windows mixer entirely, so no mixer can boost them. The same goes for apps set to one fixed output device in their own settings. Switch the app to shared mode or <em>Default</em> device if it has that option.</p>
+        </details>
+        <details>
+          <summary>Boosted audio is slightly behind the picture</summary>
+          <p>Boosted apps get about 20-45 ms of delay, which is usually unnoticeable in video. For competitive games, keep the game at 100% or below: it then plays directly with no added delay.</p>
+        </details>
+        <details>
+          <summary>Boosted sound is harsh or crackly</summary>
+          <p>Make sure the Distortion Guard is on (Mixer or Settings). Very high boosts can still sound harsh on small laptop speakers. Try a lower level, or lower <em>Settings → Maximum boost</em>.</p>
+        </details>
+        <details>
+          <summary>It still says "Setup needed" after I installed VB-CABLE</summary>
+          <p>Restart your PC: VB-CABLE switches on after a restart. If it's still missing, open <em>Settings → Troubleshooting → Run setup</em> and install again, or use <em>Open VB-CABLE setup</em>.</p>
+        </details>
+        <details>
+          <summary>The Boost engine shows "Problem"</summary>
+          <p>Usually your output device was unplugged or changed while something was boosted. VolumeX retries by itself. Choosing another output in Windows also restarts it. Apps keep playing at up to 100% in the meantime.</p>
+        </details>
+        <details>
+          <summary>A hotkey doesn't work</summary>
+          <p>Another program may already use that combination. It's shown in amber in <em>Settings → Hotkeys</em>. Pick a different one.</p>
+        </details>
+        <details>
+          <summary>Something just sounds wrong</summary>
+          <p>Use <strong>Reset audio</strong> from the tray menu or <em>Settings → Troubleshooting</em>. Every app goes back to 100% and boosting turns off. Nothing is deleted, and you can boost again straight away.</p>
+        </details>
+      </section>
+
+      <!-- ====================================================== 09 -->
+      <section id="privacy">
+        <h2><span class="num">09</span>Privacy &amp; safety</h2>
+        <ul>
+          <li><strong>No network, no telemetry, no account.</strong> The one exception: if you ask VolumeX to install VB-CABLE and the copy that ships with it is missing, it downloads VB-Audio's official package from vb-audio.com and verifies its signature first.</li>
+          <li><strong>No code injection.</strong> VolumeX never touches other programs' memory, so it's safe to run alongside games with anti-cheat.</li>
+          <li><strong>Always undoable.</strong> Every change VolumeX makes to Windows audio is written to a journal first, and undone when you quit, if VolumeX crashes, and when you uninstall.</li>
+          <li><strong>Gentle on ears.</strong> Levels ramp smoothly instead of jumping, the Distortion Guard is on by default, and the first boost comes with a hearing note.</li>
+        </ul>
+        <p>Settings are stored in <code>%APPDATA%\VolumeX\settings.json</code>. Logs and the journal are in <code>%LOCALAPPDATA%\VolumeX</code>. The code is open source: <a href="https://github.com/SihabSahariar/VolumeX">github.com/SihabSahariar/VolumeX</a>.</p>
+      </section>
+
+      <!-- ====================================================== 10 -->
+      <section id="uninstall">
+        <h2><span class="num">10</span>Uninstall</h2>
+        <p>Go to Windows Settings → Apps → Installed apps → VolumeX → Uninstall. The uninstaller first sends every app VolumeX boosted back to your normal device, then removes VolumeX and its start-up entry. If VolumeX installed VB-CABLE, it asks whether to remove that too. Choose <em>No</em> if other apps use it.</p>
+        <div class="callout">If an app VolumeX was boosting is closed while you uninstall, Windows only lets VolumeX reset it by clearing <em>all</em> per-app output choices. That includes any you set yourself in Windows Settings → Sound → Volume mixer.</div>
+        <p>Using the portable zip? Quit VolumeX from the tray, run <code>VolumeX.exe --restore</code> once, then delete the folder.</p>
+        <p class="pdf-note no-print">Prefer paper? <a href="VolumeX-User-Manual.pdf" download>Download this manual as a PDF</a>.</p>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="./" aria-label="VolumeX home"><img src="assets/brand/logo-reversed.svg" alt="VolumeX" width="137" height="26"></a>
+      <p>Made by <a href="https://sihabsahariar.com/">Sihab Sahariar</a>. Free software under the <a href="https://github.com/SihabSahariar/VolumeX/blob/main/LICENSE">GPL v3</a>.</p>
+    </div>
+    <nav class="footer-links" aria-label="More">
+      <a href="./">Home</a>
+      <a href="https://github.com/SihabSahariar/VolumeX">GitHub</a>
+      <a href="https://github.com/SihabSahariar/VolumeX/releases">Releases</a>
+      <a href="https://sihabsahariar.com/Umbra/">Umbra</a>
+      <a href="https://www.linkedin.com/in/sihabsahariar/">LinkedIn</a>
+      <a href="mailto:sihabsahariarcse@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
